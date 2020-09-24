@@ -2,6 +2,7 @@
   background: #121212;
   color: white;
   padding: 5rem 0;
+  font-family: "Nunito", sans-serif;
 
   &__container {
     display: flex;
@@ -20,7 +21,7 @@
       display: flex;
       line-height: 25px;
 
-      &-first {
+      &-text {
         margin-right: 2.5rem;
 
         &:nth-child(2) {
@@ -63,6 +64,7 @@
     padding: 2.5rem 0;
 
     &__container {
+      margin: 0 1rem;
       flex-direction: column;
     }
 
@@ -76,6 +78,37 @@
       &__open {
         &-days {
           margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    &__container {
+      font-size: 14px;
+    }
+    &__location__address {
+      flex-direction: column;
+      justify-content: center;
+
+      &-text {
+        margin-right: 0;
+        margin-bottom: 1rem;
+
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__workhours__open {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-days {
+        margin: 0.8rem;
+
+        &:nth-child(3) {
+          margin-right: 0.8rem;
         }
       }
     }
