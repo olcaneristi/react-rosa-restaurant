@@ -1,0 +1,20 @@
+@import "../../components//About/index.scss";
+@import "../../components/Blend/index.scss";
+@import "../../components/Footer/index.scss";
+@import "../../components/Header/index.scss";
+@import "../../components/Info/index.scss";
+@import "../../components/Recipes/index.scss";
+@import "../../components/Welcome/index.scss";
+@import "../../components/Loading/index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}

@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
+
+.home {
+  background: url("../../dist/assets/hero.svg") no-repeat center;
+  background-size: cover;
+  min-height: 105vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: white;
+
+  &__container {
+    h2 {
+      font-size: 6em;
+      font-family: "Herr Von Muellerhoff", cursive;
+      color: #c59d5f;
+      font-weight: 500;
+      letter-spacing: 2px;
+      opacity: 0;
+      animation: fadeUp 0.5s forwards;
+      animation-delay: 0.5s;
+    }
+
+    h1 {
+      animation: scale 1s ease;
+      font-size: 50px;
+      margin-top: -55px;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      font-family: "Source Sans Pro", sans-serif;
+      animation: scale 0.8s forwards;
+      opacity: 0;
+      margin-right: -10px;
+    }
+  }
+
+  &__separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  &__star {
+    display: flex;
+    color: #c59d5f;
+    font-size: 10px;
+    margin: 0 1.2rem;
+    animation: rotate 0.8s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+
+  .line {
+    width: 100%;
+    max-width: 8.4rem;
+    height: 0.1rem;
+    background: #ffffff;
+    position: relative;
+    opacity: 0;
+    animation: grow 2s forwards;
+    animation-delay: 0.8s;
+  }
+
+  p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    letter-spacing: 7px;
+    font-size: 16px;
+    animation: fadeDown 0.5s forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+  }
+
+  &__nav {
+    position: fixed;
+    right: 2%;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+
+    &-circle {
+      font-size: 15px;
+      margin-bottom: 10px;
+      background: none;
+      border: none;
+      outline: none;
+      animation: fadeRight 0.8s forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+
+      a {
+        color: #c59d5f;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__arrowdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      animation: button 1.5s ease infinite;
+      animation-delay: 1.6s;
+      opacity: 0;
+
+      svg {
+        color: white;
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    min-height: 100vh;
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  @keyframes button {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(15px);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      transform: translateY(60px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeDown {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeRight {
+    from {
+      transform: translateX(30px);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale {
+    from {
+      transform: scale(2);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes grow {
+    0% {
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+}

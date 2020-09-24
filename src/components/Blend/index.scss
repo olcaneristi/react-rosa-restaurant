@@ -1,0 +1,166 @@
+.blend {
+  &__container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 600px;
+    max-width: 100%;
+    background: url("../../dist/assets/perfect-blend.svg") no-repeat;
+    background-size: cover;
+
+    h1 {
+      font-family: "Herr Von Muellerhoff", cursive;
+      font-weight: 500;
+      color: #c59d5f;
+      font-size: 6em;
+      margin-left: -20px;
+    }
+
+    h2 {
+      margin-top: -45px;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+
+    &__images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      &-img {
+        height: 406px;
+        max-width: 100%;
+        transition: all 0.2s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    &__text {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      max-width: 470px;
+      margin-top: -3rem;
+      margin-left: 30px;
+
+      h1 {
+        font-family: "Herr Von Muellerhoff", "Lucida Handwriting",
+          "Brush Script MT", "Comic Sans", "Comic Sans MS", Chalkboard, cursive;
+        font-size: 7em;
+        font-weight: 400;
+        color: #c59d5f;
+        margin-right: 8px;
+      }
+
+      h2 {
+        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
+          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
+          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: -60px -8px 30px 0;
+        letter-spacing: 12px;
+        font-size: 3em;
+        color: rgb(58, 57, 57);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      span {
+        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
+          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
+          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        color: gray;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+      }
+
+      &-logo {
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: gray;
+      }
+
+      &-link {
+        margin-top: 30px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #c59d5f;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          transition: border 0.1s ease;
+
+          &:hover {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #c59d5f;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__list {
+      margin: 0 2rem;
+
+      &__images {
+        margin-left: 10px;
+      }
+
+      &__text {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    &__headline {
+      height: 470px;
+    }
+
+    &__list {
+      padding: 2rem 0;
+      flex-direction: column;
+      column-gap: 10px;
+
+      &__text {
+        margin-bottom: 2rem;
+        padding-top: 25px;
+        max-width: 100%;
+      }
+
+      &__images {
+        margin-left: 0;
+
+        &-img {
+          height: inherit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.loading__screen {
+  background: rgb(16, 19, 27);
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  &-img {
+    animation: fade 0.5s forwards;
+
+    opacity: 0;
+  }
+
+  @keyframes fade {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

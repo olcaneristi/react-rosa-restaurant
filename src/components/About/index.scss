@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
+
+.about {
+  padding: 5rem 0;
+  background: rgb(252, 252, 252);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__text {
+      margin-left: 80px;
+      max-width: 415px;
+      text-align: center;
+      margin-top: -3rem;
+
+      h1 {
+        font-family: "Herr Von Muellerhoff", "Lucida Handwriting",
+          "Brush Script MT", "Comic Sans", "Comic Sans MS", Chalkboard, cursive;
+        font-size: 7em;
+        font-weight: 400;
+        color: #c59d5f;
+        margin-right: 8px;
+      }
+
+      h2 {
+        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
+          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
+          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: -60px -8px 30px 0;
+        letter-spacing: 12px;
+        font-size: 3em;
+        color: rgb(58, 57, 57);
+      }
+
+      span {
+        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
+          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
+          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        color: gray;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+      }
+
+      &-logo {
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: gray;
+      }
+
+      &-link {
+        margin-top: 30px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #c59d5f;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          transition: border 0.1s ease;
+
+          &:hover {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #c59d5f;
+          }
+        }
+      }
+    }
+    &__image {
+      &-img {
+        width: 100%;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 3.5rem;
+
+    &__wrapper {
+      margin: 0 2rem;
+
+      &__text {
+        margin-left: 0;
+      }
+
+      &__image {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    &__wrapper {
+      flex-direction: column;
+
+      &__text {
+        margin-bottom: 2rem;
+        max-width: 100%;
+      }
+    }
+  }
+}
