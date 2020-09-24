@@ -7,14 +7,14 @@ function Info() {
         <div className="info__location">
           <h1>LOCATIONS</h1>
           <div className="info__location__address">
-            <div className="info__location__address-first">
+            <div className="info__location__address-text">
               {" "}
               <p>376 Van Brunt St</p>
-              <span>Brooklyn, NY -- 11231</span>
+              <span>Brooklyn, NY - 11231</span>
             </div>
-            <div className="info__location__address-second">
+            <div className="info__location__address-text">
               <p>25 Union Square West</p>
-              <span>NewYork, NY -- 10003</span>
+              <span>NewYork, NY - 10003</span>
             </div>
           </div>
         </div>
