@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section id="footer" className="footer">
       <button className="footer__cta">
-        <Scrollchor to="#" animate={{ offset: 20, duration: 1000 }}>
+        <Scrollchor to="#" animate={{ offset: 20, duration: 2000 }}>
           <IoMdAirplane />
         </Scrollchor>
       </button>
