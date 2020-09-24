@@ -135,6 +135,36 @@
     }
   }
 
+  @media screen and (max-width: 450px) {
+    &__container {
+      h2 {
+        font-size: 5em;
+      }
+
+      h1 {
+        font-size: 30px;
+        margin-top: -45px;
+        letter-spacing: 11px;
+      }
+
+      p {
+        font-size: 13px;
+        letter-spacing: 5px;
+      }
+    }
+    &__separator {
+      margin-bottom: 6px;
+    }
+
+    &__arrowdown {
+      bottom: 20%;
+    }
+
+    .line {
+      max-width: 5.2rem;
+    }
+  }
+
   @keyframes button {
     from {
       transform: translateY(0);
