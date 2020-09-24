@@ -24,7 +24,8 @@
     }
 
     h2 {
-      margin-top: -45px;
+      font-family: "Kumbh Sans", sans-serif;
+      margin-top: -35px;
       text-transform: uppercase;
       letter-spacing: 10px;
       font-size: 2.5em;
@@ -72,24 +73,18 @@
       }
 
       h2 {
-        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
-          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
-          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
-          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin: -60px -8px 30px 0;
-        letter-spacing: 12px;
+        font-family: "Kumbh Sans", sans-serif;
+        margin: -50px -8px 30px 0;
+        letter-spacing: 10px;
         font-size: 3em;
         color: rgb(58, 57, 57);
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 900;
       }
 
       p {
-        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
-          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
-          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
-          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
         color: gray;
         letter-spacing: 0.5px;
         line-height: 25px;
@@ -108,9 +103,10 @@
           text-decoration: none;
           text-transform: uppercase;
           color: #c59d5f;
-          font-weight: 600;
+          font-weight: 500;
           letter-spacing: 1.5px;
           transition: border 0.1s ease;
+          font-family: "Nunito", sans-serif;
 
           &:hover {
             padding-bottom: 2px;
@@ -148,6 +144,7 @@
     &__list {
       padding: 3.2rem 0;
       flex-direction: column;
+      margin: 0 1rem;
 
       &__images {
         margin-bottom: 2rem;
@@ -164,6 +161,39 @@
       &__text {
         max-width: 100%;
         padding-top: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &__list {
+      padding-bottom: 2rem;
+
+      &__text {
+        h1 {
+          font-size: 5.5em;
+        }
+        h2 {
+          font-size: 2em;
+          margin-top: -40px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    &__headline {
+      height: 300px;
+
+      h1 {
+        margin-top: -10px;
+      }
+
+      h2 {
+        letter-spacing: 7px;
+        margin-top: -30px;
+        font-size: 2em;
+        letter-spacing: 7px;
       }
     }
   }

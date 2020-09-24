@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 .blend {
   &__container {
     align-items: center;
@@ -25,7 +26,8 @@
     }
 
     h2 {
-      margin-top: -45px;
+      font-family: "Kumbh Sans", sans-serif;
+      margin-top: -35px;
       text-transform: uppercase;
       letter-spacing: 10px;
       font-size: 2.5em;
@@ -62,7 +64,7 @@
       align-items: center;
       justify-content: center;
       max-width: 470px;
-      margin-top: -3rem;
+      margin-top: -1rem;
       margin-left: 30px;
 
       h1 {
@@ -75,25 +77,19 @@
       }
 
       h2 {
-        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
-          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
-          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
-          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin: -60px -8px 30px 0;
-        letter-spacing: 12px;
+        font-family: "Kumbh Sans", sans-serif;
+        margin: -45px 0px 30px 0;
+        letter-spacing: 10px;
         font-size: 3em;
-        color: rgb(58, 57, 57);
+        color: #252525;
         text-transform: uppercase;
         font-weight: 700;
       }
 
       span {
-        font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype",
-          Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
-          "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
-          Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 600;
-        color: gray;
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        color: #515151;
         letter-spacing: 0.5px;
         line-height: 25px;
       }
@@ -111,7 +107,8 @@
           text-decoration: none;
           text-transform: uppercase;
           color: #c59d5f;
-          font-weight: 600;
+          font-family: "Nunito", sans-serif;
+          font-weight: 500;
           letter-spacing: 1.5px;
           transition: border 0.1s ease;
 
@@ -147,6 +144,7 @@
       padding: 2rem 0;
       flex-direction: column;
       column-gap: 10px;
+      margin: 0 1rem;
 
       &__text {
         margin-bottom: 2rem;
@@ -160,6 +158,38 @@
         &-img {
           height: inherit;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &__list__text {
+      h2 {
+        margin-right: 5px;
+        margin-top: -37px;
+        font-size: 2em;
+        letter-spacing: 7px;
+      }
+
+      h1 {
+        font-size: 5.5em;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    &__headline {
+      height: 300px;
+
+      h1 {
+        margin-top: -20px;
+        font-size: 5em;
+      }
+
+      h2 {
+        letter-spacing: 7px;
+        margin-top: -30px;
+        font-size: 2em;
+        letter-spacing: 7px;
       }
     }
   }
