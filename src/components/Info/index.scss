@@ -42,6 +42,10 @@
 
       &-days {
         margin-right: 4rem;
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -49,14 +53,6 @@
   @media screen and (max-width: 1200px) {
     &__container {
       margin: 0 2rem;
-    }
-
-    &__workhours {
-      &__open {
-        &-days:nth-child(3) {
-          margin-right: 0;
-        }
-      }
     }
   }
 
