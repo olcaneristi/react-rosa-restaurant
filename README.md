@@ -1,6 +1,7 @@
-#Welcome !
+# Welcome !
 
-#### I saw this restaurant project on Dribbble and built with React + SASS. While creating this project, I used features such as CSS Grid, Animation, Pseudo and I had the chance to improve myself in these features. I also tried to build the loading screen using Hooks.
+I saw this [Rosa Restaurant Website from Dribbble](https://dribbble.com/shots/1560982-Rosa-Restaurant-Website) project and built with React + SASS. <br/>
+While creating this project, I used features such as CSS Grid, Animation, Pseudo and I had the chance to improve myself in these features. I also tried to build the loading screen using Hooks.
 
 ## [Live Demo](https://rosa-restaurant.vercel.app)
 
