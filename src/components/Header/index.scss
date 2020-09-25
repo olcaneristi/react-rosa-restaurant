@@ -19,6 +19,10 @@
   &__brand {
     animation: brand 1.2s ease;
     z-index: 9999;
+
+    &-image {
+      display: flex;
+    }
   }
 
   &__sidebar-cta {
@@ -112,6 +116,10 @@
       font-size: 2em;
       animation: items 1.2s ease;
       cursor: pointer;
+
+      svg {
+        display: flex;
+      }
     }
 
     &__menu {

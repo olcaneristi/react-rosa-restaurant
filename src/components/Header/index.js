@@ -12,7 +12,7 @@ function Header() {
       <div className="navbar__container container">
         <div className="navbar__brand">
           <Link to="/#">
-            <img className="navbar__image" src={Brand} alt="logo-rosa" />
+            <img className="navbar__brand-image" src={Brand} alt="logo-rosa" />
           </Link>
         </div>
         <button
