@@ -5,7 +5,7 @@ import menu1 from "../../dist/assets/menu1.svg"
 import menu2 from "../../dist/assets/menu2.svg"
 import menu3 from "../../dist/assets/menu3.svg"
 import menu4 from "../../dist/assets/menu4.svg"
-import { Zoom } from "react-reveal"
+import { Slide } from "react-reveal"
 
 function Menu() {
   return (
@@ -17,9 +17,9 @@ function Menu() {
         </div>
 
         <div className="menu__list">
-          <div className="menu__list__images">
-            {" "}
-            <Zoom left cascade>
+          <Slide left>
+            <div className="menu__list__images">
+              {" "}
               <img
                 src={menu1}
                 alt="menu1"
@@ -44,10 +44,10 @@ function Menu() {
                 className="menu__list__images-img"
                 loading="lazy"
               />{" "}
-            </Zoom>
-          </div>
+            </div>
+          </Slide>
 
-          <Zoom right cascade>
+          <Slide right>
             <div className="menu__list__text">
               <h1>Discover</h1>
               <h2>Menu</h2>
@@ -64,7 +64,7 @@ function Menu() {
                 <Link to="">View The Full Menu</Link>
               </div>
             </div>
-          </Zoom>
+          </Slide>
         </div>
       </div>
     </section>
