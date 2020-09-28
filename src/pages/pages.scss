@@ -1,0 +1,29 @@
+.menu__page,
+.reservation__page,
+.news__page,
+.contacts__page {
+  background: url(../dist/assets/hero.svg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  .container {
+    background: linear-gradient(to right, #3a7f948e, #24644991);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+
+    h1 {
+      text-align: center;
+      margin: 10px;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      font-family: "Nunito", sans-serif;
+      font-weight: 400;
+    }
+  }
+}
