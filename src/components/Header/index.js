@@ -25,19 +25,19 @@ function Header() {
         <nav className={sidebar ? "navbar__menu active" : "navbar__menu"}>
           <ul className="navbar__menu__list" onClick={showSidebar}>
             <li className="navbar__menu__list-items active">
-              <Link to="/#">Welcome</Link>
+              <Link to="/">Welcome</Link>
             </li>
             <li className="navbar__menu__list-items">
-              <Link to="/#">Menu</Link>
+              <Link to="/Menu">Menu</Link>
             </li>
             <li className="navbar__menu__list-items">
-              <Link to="/#">Reservations</Link>
+              <Link to="/Reservations">Reservations</Link>
             </li>
             <li className="navbar__menu__list-items">
-              <Link to="/#">News</Link>
+              <Link to="/News">News</Link>
             </li>
             <li className="navbar__menu__list-items">
-              <Link to="/#">Contact</Link>
+              <Link to="/Contacts">Contact</Link>
             </li>
           </ul>
         </nav>
