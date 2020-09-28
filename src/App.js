@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react"
 import "./dist/styles/index.scss"
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import LoadingScreen from "./components/Loading"
 
-import {
-  About,
-  Info,
-  Footer,
-  Header,
-  Recipes,
-  Blend,
-  Welcome
-} from "./components"
+import { Header } from "./components"
+import { Home, Menu, Reservations, Contacts, News } from "./pages"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -26,12 +19,13 @@ function App() {
         <div className="App">
           <Router>
             <Header />
-            <Welcome />
-            <About />
-            <Recipes />
-            <Blend />
-            <Info />
-            <Footer />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/menu" component={Menu} />
+              <Route path="/reservations" component={Reservations} />
+              <Route path="/news" component={News} />
+              <Route path="/contacts" component={Contacts} />
+            </Switch>
           </Router>
         </div>
       ) : (
