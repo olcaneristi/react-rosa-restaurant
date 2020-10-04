@@ -22,7 +22,7 @@ function About() {
               London intersection.
             </span>
             <div className="about__wrapper__text-link">
-              <Link to="">About Us</Link>
+              <Link to="/reservations">About Us</Link>
             </div>
           </div>
           <div className="about__wrapper__image">

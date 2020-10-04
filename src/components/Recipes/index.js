@@ -61,7 +61,7 @@ function Menu() {
                 different food, just like you.
               </p>
               <div className="menu__list__text-link">
-                <Link to="">View The Full Menu</Link>
+                <Link to="/menu">View The Full Menu</Link>
               </div>
             </div>
           </Slide>

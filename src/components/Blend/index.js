@@ -27,7 +27,7 @@ function Blend() {
                 enjoy a memorable food experience every time.
               </span>
               <div className="blend__list__text-link">
-                <Link to="">Make a Reservation</Link>
+                <Link to="/reservations">Make a Reservation</Link>
               </div>
             </div>
           </Rotate>
