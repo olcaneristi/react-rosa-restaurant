@@ -1,6 +1,7 @@
 import React from "react"
 import { IoMdAirplane } from "react-icons/io"
 import Scrollchor from "react-scrollchor"
+import { Link } from "react-router-dom"
 
 function Footer() {
   return (
@@ -15,13 +16,13 @@ function Footer() {
         <div className="footer__copyright">
           <p>
             Copyright 2014 © Handcrafted by with love by{" "}
-            <a href="/">PixelGrade</a> Team
+            <Link to="">PixelGrade</Link> Team
           </p>
         </div>
         <div className="footer__interaction">
-          <a href="/">Permissions and Copyright</a>
+          <Link to="">Permissions and Copyright</Link>
           <span>•</span>
-          <a href="/">Contact The Team</a>
+          <Link to="/contacts">Contact The Team</Link>
         </div>
       </div>
     </section>
