@@ -25,3 +25,9 @@ $ yarn start
 ```
 
 Open [localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Screenshots
+
+![Mobile](https://user-images.githubusercontent.com/45832621/95155880-d503fb80-079d-11eb-8678-ce7c7f2b0488.png)
+![MobileMenu](https://user-images.githubusercontent.com/45832621/95155883-d6352880-079d-11eb-9648-4b53a04a7cb4.png)
+![Desktop](https://user-images.githubusercontent.com/45832621/95155876-d2090b00-079d-11eb-8af6-9e065ae75aa9.png)
