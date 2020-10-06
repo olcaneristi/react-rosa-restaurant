@@ -47,7 +47,7 @@ function Menu() {
             </div>
           </Slide>
 
-          <Slide right>
+          <Slide left>
             <div className="menu__list__text">
               <h1>Discover</h1>
               <h2>Menu</h2>
